@@ -9,6 +9,37 @@
     <link rel="stylesheet" href="global.css">
 </head>
 <body>
+    <nav id="nav">
+    <div id="div-logo">
+        <img class="img-logo" src="img/math-1625770338-knb2png.png" alt="logo">
+    </div>
+    <div id="nav-links">
+        
+        <button class="btn" onclick="seeMore()">Menu</button>
+        <ul>
+            <div class="cel-close">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pagina1.html">determinantes</a></li>
+                <li><a href="pagina2.html">Transposta</a></li>
+            </div>
+            <span class="more">
+                <button class="btn" onclick="seeMore()">FECHAR</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pagina1.html">determinantes</a></li>
+                <li><a href="pagina2.html">Transposta</a></li>
+                <li><a href="pagina3.html">Multiplicação</a></li>
+                <li><a href="pagina4.html">soma</a></li>
+                <li><a href="pagina5.html">subtração</a></li>
+                <li><a href="pagina6.html">Matriz quadrada</a></li>
+                <li><a href="pagina7.html">Matriz identidade</a></li>
+                <li><a href="pagina8.html">matriz oposta</a></li>
+                <li><a href="pagina9.html">Matriz simétrica</a></li>
+            </span>
+        </ul>
+        
+    </div>
+</nav>
+<main id="container-all">
     <h1>MATRIZ TRANSPOSTA</h1>
 
     <h2>É obtida por meio da troca de elementos da linha pela coluna</h2>
@@ -51,5 +82,7 @@
     <p>--> <strong>(A.B)t = Bt . At:</strong> no caso da multiplicação de matrizes, a transposta da multiplicação da matriz A pela matriz B é igual ao resultado fornecido da transposta de B pela transposta de A.<p>
 
     <p>--> <strong>det(A) = det (At)</strong>: o determinante da original é igual ao determinante da transposta.</p>
+</main>
 </body>
 </html>
+<script src="function.js"></script>

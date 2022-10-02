@@ -1,17 +1,18 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-   
+    background-color: rgb(243, 237, 248);
 }
 
 nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(161, 161, 238);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(0, 0, 0);
     border-bottom: 3px solid rgb(0, 0, 0);
     display:  flex;
     flex-direction: row;
-    
-
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid rgb(122, 111, 226);
 }
 #div-logo{
     width: 20%;
@@ -21,18 +22,15 @@ nav {
 
 .img-logo {
     border-radius: 10px;
-    width: 70%;
+    width: 40%;
     height: 100%;
     object-fit:cover;
     object-position: center;
-    
-   
-    
 }
 #nav-links{
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
 }
@@ -41,18 +39,82 @@ nav {
     display: inline-block;
     margin-right: 15px;
     background-color: black;
-    padding: 10px;
+    padding: 0.5vh;
     border-radius: 5px;
     border: 2px solid rgb(122, 111, 226);
+    border-bottom: solid 2px rgb(23, 11, 126);
 }
 #nav-links ul li a{
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgb(40, 2, 255);
-    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(40, 2, 255);
+    font-size: 1.8vw;
     letter-spacing: 2px;
 }
+#nav-links ul li a:hover{
+    color: rgb(181, 146, 238);
+}
+.btn{
+    display: inline-block;
+    margin-right: 15px;
+    background-color: black;
+    padding: 0.5vh;
+    border-radius: 5px;
+    border: 2px solid rgb(122, 111, 226);
+    border-bottom: solid 2px rgb(23, 11, 126);
+    padding: 0.5vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(40, 2, 255);
+    font-size: 1.8vw;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    color: rgb(181, 146, 238);
+}
+
 @media screen and (max-width: 900px) {
-    #nav-links{
+    nav{
+        position: absolute;
+    }
+    .btn{
+       
+        font-size: 10px;
+        
+    }
+    #more{
+        position: absolute;
+        top: 0vh;
+        left: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cel-close{
         display: none;
     }
+
   }
+.more {
+    display: none;
+}
+.more-show{
+    
+    position: fixed;
+    top: 1vh;
+    right: 0;
+    width: 80vw;
+    height: 98vh;
+    background-color: rgba(31, 31, 36, 0.92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 5;
+}
+
+#container-all{
+    padding-top: 7vw;
+}
