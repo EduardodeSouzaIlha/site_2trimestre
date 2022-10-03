@@ -21,30 +21,33 @@ coluna_matriz.addEventListener('input', function(e){
 })
 
 linha_matriz.addEventListener('input', function(e){
-    
     value2= e.target.value;
+    setInterval(function(){
+        if(value1 == 4 && value2 == 4){
+    
+            result1.textContent =  "Você acertou" 
+            e.path[1].style.backgroundColor = 'white'
+        }
+        else if(value1 && value2){
+            result1.textContent =  "Errado" 
+        }
+        else{
+            result1.textContent =  "Digite algum valor" 
+        }
+    }, 10)
+    
   })
- setInterval(function(){
-    if(value1 == 4 && value2 == 4){
-
-        result1.textContent =  "Você acertou" 
-    }
-    else if(value1 && value2){
-        result1.textContent =  "Errado" 
-    }
-    else{
-        result1.textContent =  "Digite algum valor" 
-    }
-}, 10)
-
+ 
+ 
 let type_matriz = document.getElementById('type-matriz');
 let result2 = document.getElementById('result-2');
 type_matriz.addEventListener('input', function(e){
-    console.log(e.target.value)
-    if (e.target.value == "identidade") {
+    console.log(e.target.value.toLowerCase())
+    if (e.target.value.toLowerCase() == "identidade") {
         result2.textContent = "Você acertou"
+        e.path[1].style.backgroundColor = 'white'
     }
-    else if(e.target.value == "i"){
+    else if(e.target.value.toLowerCase() == "i"){
         result2.textContent =  "Essa é a letra inicial" 
     }
     else{
@@ -57,6 +60,7 @@ type_matriz.addEventListener('input', function(e){
   size_matriz.addEventListener('input', function(e){
     if (e.target.value == 4){
        result3.textContent = "Você acertou"
+       e.path[1].style.backgroundColor = 'white'
     }
     else{
         result3.textContent = "Digite"
@@ -67,6 +71,7 @@ type_matriz.addEventListener('input', function(e){
   num_row.addEventListener('input', function(e){
     if (e.target.value == 4){
        result4.textContent = "Você acertou"
+       e.path[1].style.backgroundColor = 'white'
     }
     else{
         result4.textContent = "Digite"
