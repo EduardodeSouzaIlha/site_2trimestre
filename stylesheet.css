@@ -11,3 +11,9 @@ h2{ background-color: rgb(113, 113, 223);
     justify-content: flex-start;
     flex-direction: column;
 }
+#container-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
