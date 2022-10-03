@@ -7,6 +7,7 @@
     <title>Matriz Transposta</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <nav id="nav">
@@ -42,9 +43,9 @@
 </nav>
 <main id="container-all">
     <h1>MATRIZ TRANSPOSTA</h1>
-
+    
     <h2>É obtida por meio da troca de elementos da linha pela coluna</h2>
-
+    <div class="caixa-texto">
     <p>Define-se como <b>matriz transposta</b> uma matriz qualquer resultante da troca ordenada das linhas pelas colunas de uma matriz chamada de original. <br>Matematicamente, uma transposta de uma matriz é representada por: A = At.</p>
 
     <p>Antes, porém, é preciso compreender o conceito de matrizes. Em regra geral, uma matriz é definida como termos e simbologias matemáticas organizadas<br> dentro de uma tabela, agrupados em linhas e colunas de uma maneira que viabiliza a realização de cálculos simultâneos, seja a multiplicação, soma, subtração, <br>dentre outras operações matemáticas.</p>
@@ -52,7 +53,8 @@
     <p>Toda e qualquer matriz tem o formato representado por m x n (leia-se: m por n), em que “m” é o número de linhas e “n” o número de colunas de cada uma delas. <br>Considerando que uma matriz <b>A = [aij] m x n</b>, sendo esta uma operação qualquer de matriz, chama-se de transposta de A a matriz <b>At = [aij]</b> n x m, <br>em que At é obtida a partir de “A”, uma matriz principal fazendo a troca das linhas pelas colunas. </p>
 
     <p>Dada a definição, pode-se perceber na explicação que houve a troca de "n" por "m" na matriz transposta. Ou seja, os elementos dispostos nas linhas de uma<br> matriz foram organizados na coluna da matriz originada após as substituições, chamada de transposta.</p>
-
+    </div>
+    <div class="caixa-texto">
     <p>Em que:</p>
 
     <ul>
@@ -63,17 +65,18 @@
         <li>n é o número de colunas que fazem parte da matriz</li>
         <li>At é a representação da transposta de A</li>
     </ul>
-
+    </div>
+    <br>
     <p>--> Exemplo: na imagem abaixo há uma representação de matriz com a substituição dos seus elementos numéricos. Considere a matriz A, então At é:</p>
 
     <img src="img/MatrizTranspostaEx.png" alt="Exemplo de matriz transposta">
-
+    <br>
     <p>No exemplo anterior, a matriz A é uma matriz de ordem 3x2, ou seja, possui 3 linhas e duas colunas.<br> Dessa forma, a matriz transposta At terá ordem 2x3 (inversa), 2 linhas e 3 colunas após a troca.</p>
 
     <h2>Matriz Transposta: características e propriedades</h2>
-
+   
     <p>Considera-se A e B matrizes com elementos pertencentes aos números reais, sejam as características:</p>
-
+    <div class="caixa-texto">
     <p>--> <strong>(A+B)t = At + Bt:</strong> a matriz transposta da soma das matrizes A e B é igual a soma da transposta de A com a transposta de B.</p>
 
     <p>--> <strong>(a.A)t = a . At:</strong> a transposta da multiplicação de um número real qualquer pela matriz A é igual ao produto de A pela transposta de A.</p>
@@ -83,6 +86,7 @@
     <p>--> <strong>(A.B)t = Bt . At:</strong> no caso da multiplicação de matrizes, a transposta da multiplicação da matriz A pela matriz B é igual ao resultado fornecido da transposta de B pela transposta de A.<p>
 
     <p>--> <strong>det(A) = det (At)</strong>: o determinante da original é igual ao determinante da transposta.</p>
+    </div>
 </main>
 </body>
 </html>

@@ -105,6 +105,9 @@ nav {
 
 #container-all{
     padding-top: 7vw;
+    display: flex; 
+     align-items: center;
+     flex-direction: column;
 }
 .footer{
     background-color:rgb(122, 111, 226);

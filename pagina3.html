@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <nav id="nav">
@@ -45,43 +46,43 @@
         <h1>MULTIPLICAÇÃO DE MATRIZES</h1>
         
         <h2>Produto entre linhas e colunas</h2>
-        
+        <div class="caixa-texto">
         <p>Para a <b>multiplicação de matrizes</b> é necessário uma regra: o número de colunas da primeira deve ser igual ao número de colunas da segunda.</p>
         
         <p>Como cada matriz é um <b>conjunto de elementos</b> ou entradas organizadas em linhas e colunas, a multiplicação de duas ou mais matrizes<br> é feita com os elementos que integram as linhas da primeira e entradas das colunas da segunda.</p>
         
         <p>Essas colunas são colocadas de cima para baixo, e as linhas da esquerda para a direita. Elas podem aparecer no <b>conjunto principal</b>,<br> no qual os elementos de i (linhas) são iguais aos de j (colunas), ou <b>secundário</b> - soma de i com j.</p>
-        
+        </div>
         <h2>Como fazer a multiplicação de matrizes?</h2>
-        
-        <p>Na multiplicação de matrizes, além da igualdade no número de linhas de uma e colunas da outra, a matriz resultante deve apresentar<br> a mesma quantidade de linhas da primeira matriz que participa da operação e de colunas da segunda, isto é:</p>
-        
+      
+        Na multiplicação de matrizes, além da igualdade no número de linhas de uma e colunas da outra, a matriz resultante deve apresentar  <div class="caixa-texto"> a mesma quantidade de linhas da primeira matriz que participa da operação e de colunas da segunda, isto é:</div>
+        <br>
         <p>A m x n . Bn x p = Cm x p</p> <!--Centralizar essa fórmula-->
-        
+        <div class="caixa-texto">
         <p>Vamos entender no exemplo a seguir como as regras funcionam:</p>
-        
+        </div>
         <p>Dada a multiplicação de C = B.A, temos:</p>
-        
+        <div class="caixa-texto">
         <p>Primeiramente, multiplica-se a primeira linha de B com a primeira coluna de A e, em seguida, os soma:</p>
-        
+        </div>
         <p>(-1) . 1 + 3.3 = - 1 + 9 = 8</p>
-        
+        <div class="caixa-texto">
         <p>Depois, multiplica-se e soma-se a primeira linha de B com a segunda coluna de A:</p>
-        
-    <p>(-1) . 2 + 3.4 = - 2 + 12 = 10</p>
-    
-    <p>Multiplica-se e soma-se a segunda linha de B com a primeira coluna de A:</p>
-    
-    <p>4.1 + 2.3 = 4 + 6 = 10</p>
-    
-    <p>Por fim, multiplica-se e soma-se a segunda linha de B com a segunda coluna de A:</p>
-    
-    <p>4.2 + 2.4 = 8 + 8 = 16</p>
+        </div>
+        <p>(-1) . 2 + 3.4 = - 2 + 12 = 10</p>
+        <div class="caixa-texto">
+        <p>Multiplica-se e soma-se a segunda linha de B com a primeira coluna de A:</p>
+        </div>
+        <p>4.1 + 2.3 = 4 + 6 = 10</p>
+        <div class="caixa-texto">
+        <p>Por fim, multiplica-se e soma-se a segunda linha de B com a segunda coluna de A:</p>
+        </div>
+        <p>4.2 + 2.4 = 8 + 8 = 16</p>
     
     <p>Logo, a matriz resultante é:</p>
     
     <img src="img/MultiplicaçãoMatriz.png" alt="Multiplicação Matriz">
-    
+    <br>
     <p>Vale ressaltar que a multiplicação de B.A não é o mesmo que A.B. Isso acontece porque não aplica-se a <b>propriedade comutativa</b> na multiplicação de matrizes. 
     </p>
     
