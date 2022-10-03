@@ -58,11 +58,17 @@ type_matriz.addEventListener('input', function(e){
     if (e.target.value == 4){
        result3.textContent = "Você acertou"
     }
+    else{
+        result3.textContent = "Digite"
+    }
   })
   let result4 = document.getElementById('result-4');
   let num_row = document.getElementById('num-row');
   num_row.addEventListener('input', function(e){
     if (e.target.value == 4){
        result4.textContent = "Você acertou"
+    }
+    else{
+        result4.textContent = "Digite"
     }
   })
