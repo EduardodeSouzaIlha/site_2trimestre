@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+h1{
+    font-size: 1.8vw;
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    color: rgb(0, 0, 0);
+    font-family: 'bangers';
+    letter-spacing: 2px;
+}
+.quiz{
+    border-top: 4px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+}
+.quiz-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2vw;
+    width: 80%;
+}
+.quiz-text input{
+    width: 7vw;
+   
+}
+.quiz-img{
+ 
+    width: 20%;
+}
+img{
+    width: 100%;
+}
+
+
+.info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2vw;
+    text-align: center;
+}
+#type-matriz{
+    text-transform: uppercase;
+}

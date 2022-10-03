@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(243, 237, 248);
+    background-color: rgb(240, 227, 252);
 }
 
 nav {
@@ -80,18 +80,6 @@ nav {
         font-size: 10px;
         
     }
-    #more{
-        position: absolute;
-        top: 0vh;
-        left: 0;
-        width: 50vw;
-        height: 92vh;
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
     .cel-close{
         display: none;
     }
@@ -105,7 +93,7 @@ nav {
     position: fixed;
     top: 1vh;
     right: 0;
-    width: 80vw;
+    width: 55vw;
     height: 98vh;
     background-color: rgba(31, 31, 36, 0.92);
     display: flex;
@@ -117,4 +105,21 @@ nav {
 
 #container-all{
     padding-top: 7vw;
+}
+.footer{
+    background-color:rgb(122, 111, 226);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid rgb(0, 0, 0);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.footer p{
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    padding: 4px;
 }
